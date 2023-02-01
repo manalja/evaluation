@@ -1,0 +1,59 @@
+footer{
+    padding: 100px;
+    background: black;
+   
+    .trois-parties{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        .footer-news{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            color: white;
+            div{
+                width: 75%;
+                padding: 0;
+            }
+           
+         
+
+        }
+        .popular-post{
+            width: 45%;
+            margin-right: 30px;
+            p{
+                color: white;
+              }
+              p:hover{
+                color: #ff2143;
+              }
+            .most-recent-deux{
+                display: flex;
+                gap: 2em;
+                
+                .blog-content{
+                    a{
+                        text-decoration: none;
+                    }
+                    p:nth-of-type(2){
+                        font-size: 15px;
+                        color:rgba(255, 255, 255, 0.315)
+    
+                    }
+                    span{
+                        color:rgba(255, 255, 255, 0.315)
+
+                    }
+
+                }
+                
+               
+              
+            }
+           
+        }
+    }
+}
