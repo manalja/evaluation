@@ -1,0 +1,95 @@
+.bloc-deux-colonnes{
+    margin-bottom: 10%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    .lifestyle{
+        width: 760px;
+        background: white;
+        border-radius: 10px;
+        .title-menu{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 7em;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            h1{
+                margin-left: 10px;
+                font-size: 40px;
+            }
+            .lifestyle-menu{
+               display: flex;
+               gap: 1em;
+               a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+               }
+               a:nth-of-type(1){
+                color: #ff2143;
+               }
+            }
+        }
+    }
+    
+    .six-blog{
+        margin: 0 auto;
+     width: 750px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+      margin-left: 25px;
+    }
+    .whats-news-détails{
+        margin-bottom: 5%;
+       img{
+        width: 85%;
+       }
+        h2{
+            width: 85%;
+            font-size: 20px;
+        }
+        p:nth-of-type(1){
+            font-size: 12px;
+        }
+        p:nth-of-type(2){
+            width: 90%;
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+    }
+}
+.bloc-deux-lignes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conture-reseaux-sociaux{
+    margin-bottom: 50px;
+    background: white;
+    width: 342px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    
+    .reseaux-sociaux{
+        margin: 0 auto;
+        width: 310px;
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 1em;
+        .fans{
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.068);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+           
+        }
+    }
+}

@@ -137,7 +137,7 @@ h1:hover{
            margin-left: 20px; 
            color: white;
            h1{
-            margin-top: 50px;
+            margin-top: 35px;
             font-weight: bold;
             font-size: 15px;
            }
@@ -172,32 +172,39 @@ h1:hover{
             margin: 0 auto;
         }
     }
-    .contour-whats-new{
-        background: white;
-        width: 750px;
-        padding: 20px;
-        
-    }
-    .lifestyle{
-        .whts-new-image img{
-            width: 700px;
-            margin: 0 auto;
-        }
-    }
+    
+   
     .whats-new{
         margin-top: 50px;
        
-        display: flex;
-        flex-direction: row;
-        gap: 2em;
+        display: grid;
+      grid-template-columns: repeat(8,1fr);
+        gap: 1em;
+        .contour-whats-new{
+            height: 78%;
+            background: white;
+           
+            
+        }
+        .lifestyle{
+            margin-left: 20px;
+            width: 700px;
+            grid-area: 2/1;
+            .whts-new-image img{
+               
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
         .colonne-droite{
+            grid-area: 1/3;
             .conture-reseaux-sociaux{
                 margin-bottom: 50px;
                 background: white;
                 width: 342px;
                 padding-top: 30px;
                 padding-bottom: 30px;
-                border-radius: 6px;
+                border-radius: 10px;
                 
                 .reseaux-sociaux{
                     margin: 0 auto;
@@ -309,7 +316,7 @@ h1:hover{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 2em;
-        width: 750px;
+        width: 700px;
         .whats-news-fashion{
              display: grid;
              grid-template-columns: 1fr 2fr;
@@ -372,6 +379,92 @@ h1:hover{
             
             
         }
+        .bloc-most-popular{
+            border-radius: 15px;
+            background: white;
+           padding-left: 25px;
+           height: 335px;
+            
+            display: flex;
+            flex-direction: column;
+            .bloc-trois{
+                display: flex;
+            flex-direction: row;
+            gap: 0.8em;
+            .most-popular-détails img{
+                width: 90%;
+            }
+            .most-popular-détails{
+                height: 300px;
+            }
+           
+            }
+            
+            h1{
+                font-size: 15px;
+            }
+        }
 
+    }
+    .trending-news{
+        background: white;
+        padding: 70px;
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            gap: 1em;
+        margin-top: 5%;
+       
+        .bloc-trending-news{
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            width: 1200px;
+            
+           
+            
+            img{
+                width: 350px;
+            }
+            .bloc-1{
+                position: relative;
+                .blog-content{
+                    padding: 15px ;
+                    border-radius:0 10px  0 0;
+                    background: white;
+                    position: absolute;
+                    top: 55%;
+                    right: 20%;
+                
+                        h1{
+                            padding-top: 5px;
+                            font-size: 15px;
+                            width: 80%;
+                        }
+                      
+                
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                    p{
+                        font-size: 11px;
+                    }
+                    .icon-video{
+                        display: flex;
+                       gap: 9em;
+                       align-items: center;
+                    }
+                }
+
+            }
+        }
+    }
+    .trending-news{
+        h1{
+            margin-right: 55%;
+        }
     }
 
