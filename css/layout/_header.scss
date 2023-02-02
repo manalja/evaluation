@@ -3,25 +3,52 @@ header{
     width: 100%;
    
     .trending-title{
+        @media screen and(max-width:500px) {
+            display: none;
+            
+        }
         width: 100%;
         background: black;
     
         .content{
+           
             display: flex;
-            justify-content: space-between;
             align-items: center;
             color: #cdcfd8;
+            
+            .icon-energie{
+                display: flex;
+               flex-wrap: wrap;
+                align-items: center;
+                gap: 1em;
+                a:nth-of-type(1){
+                    color:#ff2143;
+                }
+                p{
+                    padding-left: 0;
+                    padding-right: 30px;
+                    border-right: 1px solid #fff;
+                }
+                span{
+                    font-size: 12px;
+                }
+                
+            }
+            .property{
+                display: flex;
+                flex-direction: row;
+            gap: 31em;
+            
+             
+            }
+            
         }
         
         p{
             font-size: 13px;
             padding-left: 30px;
         }
-          p:nth-of-type(1){
-            padding-left: 0;
-            padding-right: 30px;
-            border-right: 1px solid #fff;
-        }
+         
         p:nth-of-type(2){
             padding-right: 45%;
             font-size: 14px;
@@ -39,17 +66,40 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a:nth-of-type(2) img{
+            width: 90%;
+            @media screen and (max-width:500px){
+                width: 60%;
+            }
+        }
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+           align-items: flex-start;
+           margin-left: 20px;
+           
+            a:nth-child(1){
+                display: none;
+
+            }
+            
+        }
         
     }
     .nav{
+        @media screen and(max-width:500px) {
+             
+             }
+        display: flex;
+    flex-wrap: wrap;
+    gap: 28%;
+       align-items: center;
         height: 8vh;
         color: #fff;
         background: #ff2143;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         .menu-nav{
-           
+            @media screen and(max-width:500px) {
+            display: none;
+            }
              a{
                 color: #fff;
                 text-decoration: none;
@@ -60,16 +110,32 @@ header{
                 font-weight: bold;
 
             }
-            a:nth-of-type(5){
-                border-right: 0 solid #fff;
-
-            }
+            
             a:nth-of-type(1){
                 padding-left: 0;
                
 
             }
 
+        }
+        .icones-nav{
+            @media screen and(max-width:500px) {
+                display: none;
+                 
+                 }
+            .quatres{
+                width: 100%;
+            }
+            display: flex;
+            height: 8vh;
+            padding-top: 25px;
+            a{
+                padding: 14px;
+                color: #fff;
+            }
+           .recherche{
+            width: 20%;
+           }
         }
         
         

@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: row;
     gap: 1em;
+    .music-events img{
+        width: 270px;
+    }
     .last-new-content{
         width: 800px;
         h1{
