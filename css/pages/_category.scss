@@ -4,10 +4,22 @@
     display: flex;
     flex-direction: row;
     gap: 2em;
+    @media screen and (max-width:500px){
+        flex-direction: column;
+    }
+    .music-events{
+        @media screen and (max-width:500px){
+            display: none;
+        }
+    }
     .lifestyle{
         width: 760px;
         background: white;
         border-radius: 10px;
+        @media screen and (max-width:500px){
+            width: 450px;
+            margin-left: 20px;
+        }
         .title-menu{
             width: 100%;
             margin: 0 auto;
@@ -16,6 +28,16 @@
             gap: 7em;
             margin-bottom: 30px;
             margin-top: 30px;
+            @media screen and (max-width:500px){
+                flex-direction: column;
+                width: 450px;
+                gap: 0;
+                align-items: flex-start;
+                margin: 0;
+                margin-left: 20px;
+                margin-bottom: 30px;
+            }
+           
             h1{
                 margin-left: 10px;
                 font-size: 40px;
@@ -42,11 +64,21 @@
         grid-template-columns: repeat(2,1fr);
         gap: 1em;
       margin-left: 25px;
+      @media screen and (max-width:500px){
+        grid-template-columns: repeat(1,1fr);
+        width: 450px;
+      }
     }
     .whats-news-détails{
         margin-bottom: 5%;
        img{
+        transition: all .4s ease-out 0s;
+        transform: scale(1);
         width: 85%;
+       }
+       img:hover{
+        transition:0.4s all  ease-in-out ;
+        transform: scale(1);
        }
         h2{
             width: 85%;
@@ -67,6 +99,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width:500px){
+        align-items: flex-start;
+        margin-left: 20px;
+        width: 450px;
+    }
 }
 .conture-reseaux-sociaux{
     margin-bottom: 50px;
@@ -75,6 +112,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 10px;
+    @media screen and (max-width:500px){
+        margin-top: 0;
+        width: 450px;
+    }
     
     .reseaux-sociaux{
         margin: 0 auto;
@@ -82,6 +123,11 @@
         display: grid;
        grid-template-columns: repeat(2,1fr);
        gap: 1em;
+       @media screen and (max-width:500px){
+        align-items: flex-start;
+        width: 450px;
+        margin-left: 8px;
+    }
         .fans{
             border-radius: 5px;
             border: 1px solid rgba(0, 0, 0, 0.068);
@@ -89,6 +135,9 @@
             justify-content: center;
             align-items: center;
             gap: 1em;
+            @media screen and (max-width:500px){
+               width: 200px;
+            }
            
         }
     }

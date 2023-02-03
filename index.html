@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
    
     <link rel="stylesheet" href="css/style.min.css">
-    
     <script src="https://kit.fontawesome.com/5c9c13cceb.js" crossorigin="anonymous"></script>
+
     <title>News</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
+<body class="isActive">
     <!-- le meme head qui se repete a chaque page -->
     <header>
         <!-- la barre noir  -->
@@ -45,9 +45,18 @@
         </div>
         <!-- barre de navigation -->
         <div class="nav">
-
-            
+           
                 <div class="wrapper nav">
+                    <div class="menu-respo">
+                        <div class="burger-menu">
+                            <div class="top"></div>
+                            <div class="middle"></div>
+                            <div class="bottom"></div>
+                        </div>
+                        <div class="logo-res"> 
+                            <a href="" > <img src="img/logo/logo.png" alt=""></a>
+                        </div>
+                    </div>
                     <div class="menu-nav">
                         <a href="index.html">HOME</a>
                         <a href="about.html">ABOUT</a>
@@ -64,7 +73,13 @@
                         </div>
                         <div class="recherche"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
                     </div>
-                    
+        </div>
+        <div class="nav-survol">
+            <nav>
+                <a href="">menu </a>
+                <a href="">reservations</a>
+                <a href="">swag</a>
+            </nav>
         </div>
        </header>
    <main>
@@ -122,7 +137,7 @@
                     <div class="whats-news-détails">
                         <img src="img/gallery/whats_news_details1.png" alt="whats_news_details1">
                         <h2>Secretart for Economic Air plane that looks like</h2>
-                        <p>by Alice cloe - Jun 19, 2020</p>
+                        <span>by Alice cloe - Jun 19, 2020</span>
                         <p>Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez.</p>
                     </div>
                     <div>
@@ -308,7 +323,7 @@
 
    </section>
 <section class="card-summer">
-    <div class="card-summer-image"><a href=""><img src="img/gallery/body_card3.png" alt="body_card3"></a></div>
+    <div class="card-summer-image wrapper"><a href=""><img src="img/gallery/body_card3.png" alt="body_card3"></a></div>
 </section>
    <footer>
     <section class="wrapper trois-parties">
@@ -359,5 +374,6 @@
 
     </section>
    </footer>
+   <script src="js/main.js"></script>
 </body>
 </html>

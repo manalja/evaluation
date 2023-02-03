@@ -5,6 +5,10 @@
     gap: 2em;
     margin-top: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+    @media screen and (max-width:500px) {
+        flex-direction: column;
+      margin-left: 20px;
+    }
     
 }
 main{
@@ -14,6 +18,7 @@ h1:hover{
     color: #ff2143;
 }
 .business-article::before{
+    border-radius: 10px;
     content: '';
     width: 100%;
     height: 99%;
@@ -21,18 +26,32 @@ h1:hover{
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.589);
+    @media screen and (max-width:500px) {
+        width: 450px;
+     }
 }
 .business-article{
     margin-bottom: 30px;
     position: relative;
+    img{
+        @media screen and (max-width:500px) {
+           
+            width: 450px;
+         }
+
+    }
+    
    
     .blog-content{
-        
         position: absolute;
         top: 65%;
         right: 50%;
         margin-left: 20px; 
         color: white;
+        @media screen and (max-width:500px) {
+            right: 60%;
+            top: 50%;
+         }
        
         a{
             color: white;
@@ -43,6 +62,7 @@ h1:hover{
             h1{
                 font-size: 25px;
                 line-height: 35px;
+                
                
             }
             
@@ -72,6 +92,11 @@ h1:hover{
         left: 0;
         top: 0;
         background: rgba(0, 0, 0, 0.589);
+        @media screen and (max-width:500px) {
+            width: 450px;
+
+
+    }
     }
     .fashion-tech{
         display: flex;
@@ -80,6 +105,11 @@ h1:hover{
         img{
             width: 90%;
             border-radius: 5px;
+                @media screen and (max-width:500px) {
+                    width: 450px;
+        
+        
+            }
         }
     }
     .fashion{
@@ -92,6 +122,12 @@ h1:hover{
            right: 50%;
            margin-left: 20px; 
            color: white;
+           @media screen and (max-width:500px) {
+            width: 450px;
+            top: 65%;
+            right: 60%;
+
+    }
            h1{
             font-size: 15px;
             
@@ -126,6 +162,12 @@ h1:hover{
         left: 0;
         top: 0;
         background: rgba(0, 0, 0, 0.589);
+        @media screen and (max-width:500px) {
+            width: 450px;
+            height: 98%;
+
+
+    }
     }
     .tech{
         height: 40%;
@@ -136,6 +178,13 @@ h1:hover{
            right: 50%;
            margin-left: 20px; 
            color: white;
+           @media screen and (max-width:500px) {
+            width: 450px;
+            top: 50%;
+            right: 60%;
+
+
+    }
            h1{
             margin-top: 35px;
             font-weight: bold;
@@ -166,10 +215,21 @@ h1:hover{
        
         padding: 90px;
         background: #f4f4f4;
+        @media screen and (max-width:500px){
+            padding: 0;
+            height: 100px;
+          
+          }
 
-        .card-summer-image{
-            width: 1000px;
-            margin: 0 auto;
+
+        .card-summer-image img{
+            width: 900px;
+            margin-left: 50px;
+            @media screen and (max-width:500px){
+                width: 450px;
+                margin-left: 15px;
+                margin-top: 40px;
+              }
         }
     }
     
@@ -183,6 +243,18 @@ h1:hover{
         .contour-whats-new{
             height: 78%;
             background: white;
+            .whts-new-image img{
+                @media screen and (max-width:500px){
+                    width: 455px;
+                }
+
+            }
+            @media screen and (max-width:500px){
+                height: 94%;
+              margin-left: 20px;
+              margin-right: 20px;
+              width: 450px;
+            }
            
             
         }
@@ -198,6 +270,13 @@ h1:hover{
         }
         .colonne-droite{
             grid-area: 1/3;
+            @media screen and (max-width:500px) {
+                grid-area: 2/1;
+              
+    
+    
+        }
+            
             .conture-reseaux-sociaux{
                 margin-bottom: 50px;
                 background: white;
@@ -205,6 +284,13 @@ h1:hover{
                 padding-top: 30px;
                 padding-bottom: 30px;
                 border-radius: 10px;
+                @media screen and (max-width:500px) {
+                  width: 450px;
+                  margin-left: 20px;
+                  
+        
+        
+            }
                 
                 .reseaux-sociaux{
                     margin: 0 auto;
@@ -212,6 +298,12 @@ h1:hover{
                     display: grid;
                    grid-template-columns: repeat(2,1fr);
                    gap: 1em;
+                   @media screen and (max-width:500px) {
+                 align-items: center;
+                  
+        
+        
+            }
                     .fans{
                         border-radius: 5px;
                         border: 1px solid rgba(0, 0, 0, 0.068);
@@ -219,6 +311,12 @@ h1:hover{
                         justify-content: center;
                         align-items: center;
                         gap: 1em;
+                        @media screen and (max-width:500px) {
+                            width: 150px;
+                          
+                
+                
+                    }
                        
                     }
                 }
@@ -232,10 +330,18 @@ h1:hover{
                 padding-bottom: 30px;
                 margin-top: 40px;
                 border-radius: 6px;
+                @media screen and (max-width:500px) {
+                    width: 450px;
+                    margin-left: 20px;
+              }
                 .most-Recent{
                     
                     margin: 0 auto;
                     width: 320px;
+                    @media screen and (max-width:500px) {
+                        margin-left: 10px;
+                        
+                  }
                     .vogue::before{
                         content: '';
                         border-radius: 10px;
@@ -245,6 +351,10 @@ h1:hover{
                         left: 0;
                         top: 0;
                         background: rgba(0, 0, 0, 0.589);
+                        @media screen and (max-width:500px) {
+                            width: 400px;
+                            
+                      }
 
                     }
                     
@@ -252,6 +362,12 @@ h1:hover{
                         margin-bottom: 50px;
                         img{
                             width: 100%;
+                            border-radius: 6px;
+                            @media screen and (max-width:500px) {
+                                width: 400px;
+                                
+                          }
+
                         }
                         position: relative;
                         .blog-content{
@@ -260,14 +376,26 @@ h1:hover{
                             top: 50%;
                            left: 5%;
                             font-size: 10px;
+                            @media screen and (max-width:500px) {
+                               font-size: 8px;
+                                
+                          }
+                           
                             a{
                                 text-decoration: none;
                                 color: white;
+                                
+                                h1{
+                                    padding-top: 20px;
+                                }
                             }
                             a:nth-of-type(1){
-                                background:#0077b5;
+                                background:#8a3ab9;
                                 padding: 8px 8px;
                                 font-size: 12px;
+                                border-radius: 8px;
+                               
+                               
                             }
                             
                             
@@ -280,9 +408,18 @@ h1:hover{
                         gap: 1em;
                         font-size: 10px;
                         margin-bottom: 20px;
+                        @media screen and (max-width:500px) {
+                            width: 350px;
+                            
+                      }
                         a{
                             color: black;
                             text-decoration: none;
+                            @media screen and (max-width:500px) {
+                             font-size: 8px;
+                             width: 350px;
+                                
+                          }
                         }
                         p{
                             color: rgba(0, 0, 0, 0.342);
@@ -296,6 +433,11 @@ h1:hover{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media screen and (max-width:500px){
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 30px;
+            }
             .lifestyle-menu{
                display: flex;
                gap: 1.5em;
@@ -317,10 +459,59 @@ h1:hover{
         grid-template-columns: repeat(2,1fr);
         gap: 2em;
         width: 700px;
+        .whats-news-détails{
+            img{
+                @media screen and (max-width:500px){
+                   width: 400px;
+                    
+                }
+            }
+           span{
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.445);
+            }
+            p{
+                line-height: 30px;
+                @media screen and (max-width:500px){
+                    width: 70%;
+                    
+                }
+            }
+            @media screen and (max-width:500px){
+                width: 60%;
+
+            }
+        }
+        @media screen and (max-width:500px) {
+           display: flex;
+           flex-direction: column;
+
+
+    }
         .whats-news-fashion{
              display: grid;
              grid-template-columns: 1fr 2fr;
              gap: 1em;
+             img{
+                @media screen and (max-width:500px){
+                    width: 120px;
+    
+                }
+             }
+
+             @media screen and (max-width:500px){
+               
+                display: flex;
+                flex-direction: column;
+               
+
+            }
+             .whats-news-fashion-text{
+                @media screen and (max-width:500px){
+                    width: 60%;
+    
+                }
+             }
              a:nth-of-type(1){
                color:#0077b5;
                 
@@ -355,14 +546,39 @@ h1:hover{
     .most-popular{
         .travel{
             margin-right: 20px;
+            @media screen and (max-width:500px){
+                display: none;
+
+            }
+            
         }
         margin-top: 50px;
         display: flex;
         flex-direction: row;
         gap: 1em;
+        .most-popular-détails:nth-of-type(1){
+            @media screen and (max-width:500px){
+                display: none;
+
+            }
+        }
+        .most-popular-détails:nth-of-type(2){
+            @media screen and (max-width:500px){
+                display: none;
+
+            }
+        }
+
+
        
             .most-popular-détails{
                 width: 260px;
+                
+                    @media screen and (max-width:500px){
+                       width: 450px;
+        
+                    }
+            
                 a{
                     text-decoration: none;
                     color: black;
@@ -384,6 +600,14 @@ h1:hover{
             background: white;
            padding-left: 25px;
            height: 335px;
+            @media screen and (max-width:500px){
+                height: 400px;
+                width: 450px;
+                margin-left: 20px;
+
+ 
+             }
+
             
             display: flex;
             flex-direction: column;
@@ -391,8 +615,22 @@ h1:hover{
                 display: flex;
             flex-direction: row;
             gap: 0.8em;
+            @media screen and (max-width:500px){
+                padding-left: 10px;
+
+ 
+             }
+           
             .most-popular-détails img{
                 width: 90%;
+                    @media screen and (max-width:500px){
+                        width: 380px;
+                        height:249px ;
+                        border-radius: 8px;
+         
+                   
+
+                }
             }
             .most-popular-détails{
                 height: 300px;
@@ -402,6 +640,11 @@ h1:hover{
             
             h1{
                 font-size: 15px;
+                @media screen and (max-width:500px){
+                  margin-left: 5px;
+    
+     
+                 }
             }
         }
 
@@ -416,20 +659,65 @@ h1:hover{
             align-items: center;
             gap: 1em;
         margin-top: 5%;
+        @media screen and (max-width:500px){
+           width: 450px;
+           margin-left: 15px;
+           .bloc-1{
+            position: relative;
+           
+            .blog-content{
+                padding: 15px ;
+                border-radius:0 10px  0 0;
+                background: white;
+                position: absolute;
+                top: 55%;
+                right: 20%;
+            
+                    h1{
+                        padding-top: 5px;
+                        font-size: 15px;
+                        width: 80%;
+                    }
+                  
+            
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                p{
+                    font-size: 11px;
+                }
+                .icon-video{
+                    display: flex;
+                   gap: 9em;
+                   align-items: center;
+                }
+            }
+
+        }
+
+        }
+    
+        .bloc-trending-news:nth-child(1){
+            @media screen and (max-width:500px){
+                display: none;
+
+            }
+        }
+
        
         .bloc-trending-news{
             display: flex;
             flex-direction: row;
             gap: 2em;
             width: 1200px;
-            
-           
-            
             img{
                 width: 350px;
             }
+            
             .bloc-1{
                 position: relative;
+               
                 .blog-content{
                     padding: 15px ;
                     border-radius:0 10px  0 0;
@@ -467,4 +755,5 @@ h1:hover{
             margin-right: 55%;
         }
     }
+    
 
