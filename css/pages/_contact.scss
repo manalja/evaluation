@@ -6,6 +6,10 @@ iframe{
     @media screen and (max-width:500px){
         display: none;
     }
+    @media screen and (min-width: 500px) and (max-width: 900px){
+        width: 690px;
+        margin-left: 7%;
+    }
 }
 .get-in-touch{
     height: 65vh;
@@ -23,6 +27,12 @@ iframe{
        margin-bottom: 10%;
        margin-top: 5%;
     }
+    @media screen and (min-width: 500px) and (max-width: 900px){
+        flex-direction: column;
+        width: 700px;
+        height: 90vh;
+      
+    }
     .formulaire{
         textarea{
             font-size: 15px;
@@ -31,6 +41,9 @@ iframe{
             padding-left: 10px;
             @media screen and (max-width:500px){
                 width: 440px;
+            }
+            @media screen and (min-width: 500px) and (max-width: 900px){
+                width: 137%;
             }
         }
       width: 70%;  
@@ -42,6 +55,9 @@ iframe{
         @media screen and (max-width:500px){
             flex-direction: column;
         }
+        @media screen and (min-width: 500px) and (max-width: 900px){
+                 width: 670px;  
+        }
             input{
                 border: 1px solid rgba(0, 0, 0, 0.192);
                 width: 50%;
@@ -51,6 +67,7 @@ iframe{
                 @media screen and (max-width:500px){
                     width: 440px;
                 }
+               
                 
           
            
@@ -62,6 +79,9 @@ iframe{
     .subject{
         display: flex;
         flex-direction: column;
+        @media screen and (min-width: 500px) and (max-width: 900px){
+            width: 670px;  
+        }
         input{
             border: 1px solid rgba(0, 0, 0, 0.192);
             width: 100%;
@@ -77,6 +97,13 @@ iframe{
             text-align: center;
             width: 15%;
             color: #ff2143;
+            @media screen and (max-width:500px){
+                width: 150px;
+            }
+            @media screen and (min-width: 500px) and (max-width: 900px){
+                   width: 150px;
+                   margin-bottom: 50px;
+            }
 
         }
         .withe-btn:hover{
@@ -97,6 +124,11 @@ iframe{
         margin-left: 15px;
      
         }
+        @media screen and (min-width: 500px) and (max-width: 900px){
+            margin: 0;
+            width: 500px;
+        }
+       
         a {
             color: gray;
         }

@@ -3,9 +3,10 @@
    @media screen and (max-width:500px){
     width: 500px;
     padding: 0;
-   
-    
    }
+   @media screen and (min-width: 500px) and (max-width: 900px){
+    width: 690px;
+ }
   
    .our-content{
     @media screen and (max-width:500px){
@@ -21,6 +22,10 @@
     width: 80%;
     line-height: 30px;
     margin-bottom: 5%;
+    @media screen and (min-width: 500px) and (max-width: 900px){
+        width: 650px;
+        padding-left: 0;
+     }
    }
    p{
     font-size: 14px;
@@ -36,8 +41,14 @@
        background: #ff2143;
        width: 500px;
        height: 130vh;
+      
        
       }
+      @media screen and (min-width: 500px) and (max-width: 900px){
+        background: url(../img/gallery/section_bg02.jpg) ;
+        height: 170vh;
+      }
+      
     .bloc-best-service{
         display: flex;
         flex-direction: row;
@@ -49,6 +60,11 @@
            height: 90vh;
            width: 400px;
           }
+          @media screen and (min-width: 500px) and (max-width: 900px){
+            width: 650px;
+            flex-direction: column;
+            height: 90vh;
+         }
         .best-service-content{
             margin-top: 10%;
             img{
@@ -56,6 +72,10 @@
                     margin-top: 50%;
                     width: 390px;
                   }
+                  @media screen and (min-width: 500px) and (max-width: 900px){
+                    width: 690px;
+                    margin-top: 80%;
+                 }
             }
         }
         .noir-text{
@@ -117,6 +137,9 @@
         margin-top: 5%;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width: 500px) and (max-width: 900px){
+            height: 150vh;
+        }
         .team-titre{
             p{
                 color: #ff2143;
@@ -124,6 +147,9 @@
                 @media screen and (max-width:500px){
                    display: none;
                    
+                }
+                @media screen and (min-width: 500px) and (max-width: 900px){
+                    display: none;
                 }
             }
             h1{
@@ -134,6 +160,10 @@
                     font-size: 20px;
                    
                 }
+                @media screen and (min-width: 500px) and (max-width: 900px){
+                    margin-left: 70px;
+                    font-size: 35px;
+                }
             }
         }
         .team-mambers{
@@ -143,6 +173,18 @@
         @media screen and (max-width:500px){
             flex-direction: column;
         }
+        @media screen and (min-width: 500px) and (max-width: 900px){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 3em;
+            width: 690px;
+           margin-left: 75px;
+        }
+        }
+        .bloc-team:nth-of-type(3){
+            @media screen and (min-width: 500px) and (max-width: 900px){
+                margin-top: 20%;
+            }
         }
         .bloc-team{
             position: relative;
